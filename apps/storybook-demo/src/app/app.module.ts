@@ -3,10 +3,11 @@ import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
 import { ButtonComponent } from './button/button.component';
+import {UiModule} from "@storybook/ui";
 
 @NgModule({
   declarations: [AppComponent, ButtonComponent],
-  imports: [BrowserModule],
+  imports: [BrowserModule, UiModule],
   providers: [],
   bootstrap: [AppComponent]
 })
