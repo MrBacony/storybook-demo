@@ -25,6 +25,9 @@
     "storybook-demo-e2e": {
       "tags": [],
       "implicitDependencies": ["storybook-demo"]
+    },
+    "ui": {
+      "tags": []
     }
   }
 }
