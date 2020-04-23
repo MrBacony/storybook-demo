@@ -1,7 +1,8 @@
 import {ButtonComponent} from "./button.component";
 import {text, withKnobs} from "@storybook/addon-knobs";
-import figmaDecorator from 'storybook-addon-figma';
 import {withDesign} from "storybook-addon-designs";
+import {action} from "@storybook/addon-actions";
+
 export default {
   title: 'Special Button',
   decorators: [
@@ -19,20 +20,23 @@ export default {
 export const Default = () => ({
   component: ButtonComponent,
   props: {
-    label: text('label', 'Button Label')
+    label: text('label', 'Button Label'),
+    trigger: action('trigger')
   }
 });
 
 export const FlatButton = () => ({
   component: ButtonComponent,
   props: {
-    label: text('label','Flat Button'),
+    label: text('label', 'Flat Button'),
+    trigger: action('trigger')
   }
 });
 
 export const OutlineButton = () => ({
   component: ButtonComponent,
   props: {
-    label: text('label','Outline Button')
+    label: text('label', 'Outline Button'),
+    trigger: action('trigger')
   }
 });
