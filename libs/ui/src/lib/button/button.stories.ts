@@ -20,7 +20,8 @@ export default {
 export const Default = () => ({
   component: ButtonComponent,
   props: {
-    label: text('label', 'Button Label'),
+    label: text('label', 'Default Button'),
+    type: 'default',
     trigger: action('trigger')
   }
 });
@@ -29,6 +30,7 @@ export const FlatButton = () => ({
   component: ButtonComponent,
   props: {
     label: text('label', 'Flat Button'),
+    type: 'flat',
     trigger: action('trigger')
   }
 });
@@ -37,6 +39,7 @@ export const OutlineButton = () => ({
   component: ButtonComponent,
   props: {
     label: text('label', 'Outline Button'),
+    type: 'outline',
     trigger: action('trigger')
   }
 });
